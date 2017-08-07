@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title> Code | Liam Newmarch</title>
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+      <h1> GitHub repos </h1>
+      <div class="repo-list" github-repos github-username="liamnewmarch"></div>
+      <script github-repos-template type="text/template">
+        <h2 class="repo-name"> {{ name }} </h2>
+        <p class="repo-description"> {{ description }} </p>
+        <p class="repo-link"> liamnewmarch.github.io/{{ name }} </p>
+      </script>
+      <script src="/js/app.js"></script>
+      <script async src="https://liamnewmarch.github.io/js/analytics.js"></script>
+  </body>
+</html>
